@@ -12,9 +12,13 @@ import { useState } from 'react';
 
 export default function BackgroundBeamsDemo() {
   return (
-    <div className="relative overflow-hidden min-h-screen bg-neutral-950 flex flex-col items-center  antialiased">
+    <div>
+          <div className="relative z-10">
+    <NavBar /> {/* NavBar placed inside a container with higher z-index */}
+  </div>
+    <div className="relative low-hidden min-h-screen bg-neutral-950 flex flex-col items-center  antialiased">
+
       <BackgroundBeams className="fixed top-0 left-0 w-full h-full" />
-      <NavBar/>
     
     <div className="flex justify-center items-center h-screen">
       <div className="relative z-10 max-w-2xl mx-auto px-4  text-center text-neutral-500">
@@ -51,6 +55,7 @@ export default function BackgroundBeamsDemo() {
       <ContactForm/>
     </div>
     <Footer/>
+    </div>
     </div>
     
 

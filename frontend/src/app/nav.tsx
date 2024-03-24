@@ -1,8 +1,13 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
+import Link from 'next/link';
 
 const NavBar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <nav className="bg-gray-800 text-white">
+    <nav className="fixed w-full bg-black text-white z-10">
       <div className="mx-auto px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
@@ -16,11 +21,22 @@ const NavBar = () => {
             </div>
           </div>
           <div className="flex items-center">
+            <Link href="/login">
             <button className="hidden sm:block px-4 py-2 bg-black text-white text-sm rounded-md font-semibold hover:bg-black/[0.8] hover:shadow-lg">Sign In</button>
-            <button className="sm:hidden px-4 py-2 bg-black text-white text-sm rounded-md font-semibold hover:bg-black/[0.8] hover:shadow-lg">Menu</button>
+            </Link>
+            <button className="sm:hidden px-4 py-2 bg-black text-white text-sm rounded-md font-semibold hover:bg-black/[0.8] hover:shadow-lg" onClick={() => setIsMenuOpen(!isMenuOpen)}>Menu</button>
           </div>
         </div>
       </div>
+      {isMenuOpen && (
+        <div className="sm:hidden">
+          <div className="px-2 pt-2 pb-3 space-y-1 bg-black-800">
+            <a href="#dashboard" className="block px-3 py-2 text-base font-medium">Dashboard</a>
+            <a href="#about" className="block px-3 py-2 text-base font-medium">About us</a>
+            <a href="#contact" className="block px-3 py-2 text-base font-medium">Contact us</a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
