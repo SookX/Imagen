@@ -2,8 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Logo from './assets/logo.png'
-import Image from 'next/image';
+
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,8 +13,8 @@ const NavBar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link href="/">
-            <img className="h-8 w-auto" src={Logo}/>
-                </Link>
+            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"/>
+            </Link>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 <Link href="/dashboard">
