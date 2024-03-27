@@ -42,7 +42,7 @@ export default function BackgroundBeamsDemo() {
       </div>
       <section className="py-12" id="about">
         <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold text-center mb-8">About Us</h1>
+            <h1 className="text-4xl py-10   font-bold text-center mb-8">About Us</h1>
             <div className="flex flex-col lg:flex-row items-center lg:space-x-12">
             <img src="https://i.gifer.com/7VA.gif" alt="Company" className="rounded-lg shadow-lg mb-4 lg:mb-0" />
                   <div>

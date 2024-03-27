@@ -32,7 +32,6 @@ export const CardContainer = ({
       containerRef.current.getBoundingClientRect();
     const x = (e.clientX - left - width / 2) / 25;
     const y = (e.clientY - top - height / 2) / 25;
-    containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
   };
 
   const handleMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -43,7 +42,6 @@ export const CardContainer = ({
   const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!containerRef.current) return;
     setIsMouseEntered(false);
-    containerRef.current.style.transform = `rotateY(0deg) rotateX(0deg)`;
   };
   return (
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>

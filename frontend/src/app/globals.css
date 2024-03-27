@@ -15,7 +15,9 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+div {
+  overflow: hidden;
+}
 body {
   color: white;
   background: black;

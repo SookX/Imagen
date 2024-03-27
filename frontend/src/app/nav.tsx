@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Logo from './assets/logo.png'
+import Image from 'next/image';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,12 +13,20 @@ const NavBar = () => {
       <div className="mx-auto px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"/>
+            <Link href="/">
+            <img className="h-8 w-auto" src={Logo}/>
+                </Link>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                <a href="#dashboard" className="px-3 py-2 text-sm font-medium">Dashboard</a>
-                <a href="#about" className="px-3 py-2 text-sm font-medium">About us</a>
-                <a href="#contact" className="px-3 py-2 text-sm font-medium">Contact us</a>
+                <Link href="/dashboard">
+                <p className="px-3 py-2 text-sm font-medium">Dashboard</p>
+                </Link>
+                <Link href="/#about">
+                  <p  className="px-3 py-2 text-sm font-medium">About us</p>
+                </Link>
+                <Link href="/#contact">
+                <p  className="px-3 py-2 text-sm font-medium">Contact us</p>
+                </Link>
               </div>
             </div>
           </div>
