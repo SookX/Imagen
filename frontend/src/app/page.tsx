@@ -7,6 +7,7 @@ import { ContactForm } from "./form";
 import Footer from "./footer";
 import AboutImage from "./favicon.ico"
 import { useState } from 'react';
+import Link from "next/link";
 
 
 
@@ -31,9 +32,11 @@ export default function BackgroundBeamsDemo() {
         </p>
         <button className="p-[3px] relative">
       <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+      <Link href="/login">
       <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
         Sign Now
      </div>
+     </Link>
       </button>
       </div>
       </div>
