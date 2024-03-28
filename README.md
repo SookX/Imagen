@@ -25,8 +25,14 @@
     <img src = "https://github.com/tandpfun/skill-icons/raw/main/icons/Anaconda-Dark.svg" width = 48>
     <img src = "https://github.com/tandpfun/skill-icons/raw/main/icons/Python-Dark.svg" width = 48>
     <img src = "https://github.com/tandpfun/skill-icons/raw/main/icons/TensorFlow-Dark.svg" width = 48>
+</div>
 
+<div align="center">
+  <h1>Повече за архитектурата на Изкуствения Интелект: </h1>
+</div>
 
+<div>
+  <h2 align = "center">В процес на разработка 😉</h2>
 </div>
 
 
