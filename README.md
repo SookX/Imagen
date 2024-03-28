@@ -12,7 +12,21 @@
 </div>
 
 <div>
-  <p style="font-size: 24px;">В процес на разработка</p>
+  <h2>Frontend: </h2>
+  <img src= "https://github.com/tandpfun/skill-icons/blob/main/icons/NextJS-Dark.svg" width = 48 >
+  <img src = "https://github.com/tandpfun/skill-icons/raw/main/icons/React-Dark.svg" width = 48>
+  <img src = "https://github.com/tandpfun/skill-icons/raw/main/icons/TailwindCSS-Dark.svg" width = 48>
+  <img src = "https://github.com/tandpfun/skill-icons/raw/main/icons/TypeScript.svg" width = 48>
+  <h2>Backend: </h2>
+    <img src = "https://github.com/tandpfun/skill-icons/raw/main/icons/Django.svg" width = 48>
+    <img src = "https://github.com/tandpfun/skill-icons/raw/main/icons/GCP-Dark.svg" width = 48>
+    <img src = "https://github.com/tandpfun/skill-icons/raw/main/icons/PostgreSQL-Dark.svg" width = 48>
+  <h2>Machine Learning: </h2>
+    <img src = "https://github.com/tandpfun/skill-icons/raw/main/icons/Anaconda-Dark.svg" width = 48>
+    <img src = "https://github.com/tandpfun/skill-icons/raw/main/icons/Python-Dark.svg" width = 48>
+    <img src = "https://github.com/tandpfun/skill-icons/raw/main/icons/TensorFlow-Dark.svg" width = 48>
+
+
 </div>
 
 
