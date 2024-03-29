@@ -29,7 +29,7 @@ const Login = () => {
 
       }
       localStorage.setItem('accData', JSON.stringify(accData));
-      localStorage.setItem('loggedIn', true);
+      localStorage.setItem('loggedIn', 'true');
       setEmail('');
       setPassword('');
       setError('');
