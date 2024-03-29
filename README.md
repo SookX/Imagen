@@ -1,8 +1,5 @@
 # Imagen
-<div align="center">
-  <h1>Линк за сайта ( Все още е недовършен, така че не работи ): </h1>
-<a href="https://imagen-kappa.vercel.app/">https://imagen-kappa.vercel.app/</a>
-</div>
+
 <div align="center">
   <img src="https://i.ibb.co/TPxfw2J/imagen-favicon-black.png" width="100px"/> 
   <h1>За проекта: </h1>
