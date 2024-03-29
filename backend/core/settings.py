@@ -155,4 +155,5 @@ AUTH_USER_MODEL = 'user_authenticate.UserAccount'
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
+    'https://imagen-kappa.vercel.app'
 ]
