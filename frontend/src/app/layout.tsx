@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { useState } from 'react';
+import { Analytics } from "@vercel/analytics/react"
 
 
 const poppins = Poppins({
