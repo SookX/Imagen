@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NavBar from "../nav";
 import Link from "next/link";
 import axios from "axios";
@@ -42,7 +42,16 @@ const Login = () => {
     }
   };
 
+  useEffect(() => {
+    const logged = localStorage.getItem("loggedIn");
+    if (logged == "true"){
+      router.push('/dashboard');
+    }
+    
+  }, []); 
+
   return (
+
     <div>
       <NavBar />
       <div className="flex h-screen w-full flex-col justify-center px-6 py-12 lg:px-8">

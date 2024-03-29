@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, {useEffect} from "react";
 import NavBar from "./nav";
 import { GlobeDemo } from "./globe";
 import { BackgroundBeams } from "../../components/ui/background-beams";
@@ -9,9 +11,12 @@ import AboutImage from "./favicon.ico"
 import { useState } from 'react';
 import Link from "next/link";
 
-
+const logged = localStorage.getItem("accData")
 
 export default function BackgroundBeamsDemo() {
+
+
+  
   return (
     <div>
           <div className="relative z-10">
