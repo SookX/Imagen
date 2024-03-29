@@ -1,6 +1,6 @@
 # Imagen
 <div align="center">
-  <h1>Линк за сайта: </h1>
+  <h1>Линк за сайта ( Все още е недовършен, така че не работи ): </h1>
 <a href="https://imagen-kappa.vercel.app/">https://imagen-kappa.vercel.app/</a>
 </div>
 <div align="center">
