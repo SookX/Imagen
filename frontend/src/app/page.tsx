@@ -11,7 +11,6 @@ import AboutImage from "./favicon.ico"
 import { useState } from 'react';
 import Link from "next/link";
 
-const logged = localStorage.getItem("accData")
 
 export default function BackgroundBeamsDemo() {
 
