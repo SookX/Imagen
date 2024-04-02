@@ -20,6 +20,7 @@ const NavBar = () => {
   
   const handleLogout = () => {
     localStorage.removeItem("loggedIn");
+    localStorage.removeItem("accData")
     setIsLoggedIn(false);
     router.push("/login"); 
   };
