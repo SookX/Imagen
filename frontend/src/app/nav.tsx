@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Logo from './assets/logo-black.png'
 import { useRouter } from 'next/navigation';
 
 
@@ -31,7 +32,7 @@ const NavBar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link href="/">
-              <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"/>
+              <img className="h-8 w-auto" src={Logo.src} alt="Your Company"/>
             </Link>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
@@ -55,12 +56,14 @@ const NavBar = () => {
 
               <div id="userDropdown" className="z-10 absolute  bg-black divide-y divide-gray-100 rounded-lg w-44 right-4">
   <div className="px-4 py-3 text-sm text-white ">
-    <div>Bonnie Green</div>
-    <div className="font-medium truncate">name@flowbite.com</div>
+    <div>Soker</div>
+    <div className="font-medium truncate">toktokmancheta@gmail.com</div>
   </div>
   <ul className="py-2 text-sm text-white dark:text-white" aria-labelledby="avatarButton">
     <li>
-    <a href="#" className="block px-4 py-2 hover:bg-white hover:text-gray-700">API Keys</a>
+    <Link href="/keys">
+    <p  className="block px-4 py-2 hover:bg-white hover:text-gray-700">API Keys</p>
+    </Link>
     </li>
     <li>
       <a href="#" className="block px-4 py-2 hover:bg-white hover:text-gray-700">Settings</a>

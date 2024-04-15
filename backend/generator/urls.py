@@ -4,6 +4,7 @@ from . import views
 
 urlpatterns = [
     path('image/', views.genImage),
+    path("imageApi/", views.genImageApi)
 
 ]
 

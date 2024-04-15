@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = 'django-insecure-i5q@ijkf8_f^6i)la_vz=r#x9xxna!+i)(=y-u4!t=+i$)--kq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'djoser',
     'user_authenticate',
-    'generator'
+    'generator',
+    'keys'
 ]
 
 MIDDLEWARE = [
@@ -174,10 +175,9 @@ GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
 
 
 
-DEFAULT_FILE_STORAGE=os.getenv("DEFAULT_FILE_STORAGE")
+DEFAULT_FILE_STORAGE = 'core.gcloud.GoogleCloudStorage'
 GS_PROJECT_ID = os.getenv('GS_PROJECT_ID')
 GS_BUCKET_NAME =os.getenv('GS_BUCKET_NAME')
-
 MEDIA_ROOT = "media/"
 UPLOAD_ROOT = 'media/uploads/'
-MEDIA_URL = 'https://storage.googleapis.com/{}/'.format(GS_BUCKET_NAME)
+MEDIA_URL = "https://storage.googleapis.com/{}/".format(GS_BUCKET_NAME)

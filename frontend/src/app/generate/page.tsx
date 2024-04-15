@@ -4,21 +4,30 @@ import React, { useState } from "react";
 import NavBar from "../nav";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import { PacmanLoader } from "react-spinners";
+
 
 const Generate = () => {
   const router = useRouter();
   const [prompt, setPrompt] = useState('');
   const [model, setModel] = useState('0');
+  const [loading, setLoading] = useState(false);
+
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const obj = {
+      id: JSON.parse(localStorage.getItem('accData') ?? '')?.id,
       prompt,
       model
     };
     try {
+      setLoading(true);
       const response = await axios.post('http://localhost:8000/gen/image/?Content-Type=application/json', obj);
-      console.log(response.data); 
+      if(response.status == 200) {
+          setLoading(false);
+          router.push('/dashboard')
+      }
       setPrompt('');
     } catch (err) {
       console.error(err);
@@ -27,6 +36,7 @@ const Generate = () => {
 
   return (
     <div>
+      <div className={`${loading ? 'blur': ''}`}>
       <NavBar />
       <div className="flex justify-center items-center  w-full h-screen">
         <div className="relative flex flex-col items-center justify-center  items-center text-4xl w-8/12 h-screen">
@@ -58,6 +68,10 @@ const Generate = () => {
           </form>
         </div>
       </div>
+    </div>
+    <div className="fixed w-full flex items-center justify-center bottom-80">
+                <PacmanLoader className={`${loading ? '' : 'invisible'}`} color="#FFFFFF"/>
+            </div>
     </div>
   );
 };
