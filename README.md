@@ -2,13 +2,13 @@
 
 <div align="center">
   <img src="https://i.ibb.co/TPxfw2J/imagen-favicon-black.png" width="100px"/> 
-  <h1>За проекта: </h1>
+  <h1>About the project: </h1>
 </div>
 
-### Подобно на известни платформи като DALL-E на OpenAI и Midjourney, Imagen дава на потребителите възможност да генерират завладяващи снимки от прост текст. Също така това може да става както и в Web апликацията, така и директно в Python code, чрез използване на безплатния API, който предлага приложението.
+###  Similar to well-known platforms like OpenAI's DALL-E and Midjourney, Imagen gives users the ability to generate compelling images from simple text. This can also be done both in the Web application and directly in Python code, by using the free API that the application offers.
 
 <div align="center">
-  <h1>Технологии: </h1>
+  <h1>Technologies: </h1>
 </div>
 
 <div>
@@ -27,12 +27,5 @@
     <img src = "https://github.com/tandpfun/skill-icons/raw/main/icons/TensorFlow-Dark.svg" width = 48>
 </div>
 
-<div align="center">
-  <h1>Повече за архитектурата на Изкуствения Интелект: </h1>
-</div>
-
-<div>
-  <h2 align = "center">В процес на разработка 😉</h2>
-</div>
 
 
