@@ -24,7 +24,7 @@ const Login = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:8000/user/login/?Content-Type=application/json', obj);
+      const response = await axios.post('http://localhost:8000/user/user/?Content-Type=application/json', obj);
       console.log(response.data); 
       const accData = {
         id: response.data.id,

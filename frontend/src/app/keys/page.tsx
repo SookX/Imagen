@@ -28,7 +28,7 @@ const Keys = () => {
     useEffect(() => {
         const logged = localStorage.getItem("loggedIn");
         if (logged != "true"){
-          router.push('/login');
+          router.push('/user');
         }
         else {
           fetchKey();
@@ -39,7 +39,7 @@ const Keys = () => {
       const fetchKey = async () => {
         try {
           setLoading(true)
-          const response = await axios.get(`http://127.0.0.1:8000/api/getKeyCredentials/?Content-Type=application-json&id=${JSON.parse(localStorage.getItem('accData') ?? '')?.id}`);
+          const response = await axios.get(`http://127.0.0.1:8000/api/user/?Content-Type=application-json&id=${JSON.parse(localStorage.getItem('accData') ?? '')?.id}`);
            if (response.status == 200){
                 setLoading(false); 
            }

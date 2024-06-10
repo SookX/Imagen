@@ -13,7 +13,7 @@ import PIL
 from io import BytesIO
 
 UserAccount = get_user_model()
-NGROK_URL = "https://38e1-34-82-47-43.ngrok-free.app"
+NGROK_URL = "https://1178-34-143-162-251.ngrok-free.app"
 
 
 @api_view(['POST'])

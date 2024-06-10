@@ -32,7 +32,7 @@ export default function ThreeDCardDemo() {
       const accDataString = localStorage.getItem('accData');
       if (accDataString !== null) {
         const accData = JSON.parse(accDataString);
-        const response = await axios.get(`http://127.0.0.1:8000/dashboard/info/?Content-Type=application-json&id=${accData.id}`);      
+        const response = await axios.get(`http://127.0.0.1:8000/dashboard/data/?Content-Type=application-json&id=${accData.id}`);      
         if (response.status == 200) {
           setLoading(false)
         }

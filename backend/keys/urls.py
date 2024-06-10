@@ -3,9 +3,9 @@ from django.views.generic import TemplateView
 from . import views
 
 urlpatterns = [
-    path('addKey/', views.gen_key),
-    path('checkKey/', views.check_key),
-    path('getKeyCredentials/', views.key_credentials)
+    path('key/', views.gen_key),
+    path('valid/', views.check_key),
+    path('user/', views.key_credentials)
 
 ]
 
